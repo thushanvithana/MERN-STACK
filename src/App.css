@@ -1,0 +1,127 @@
+.underline {
+  width: 252px;
+  height: 5px;
+  background-color: darkslategray;
+}
+.underline1 {
+  width: 312px;
+  height: 2px;
+  background-color: darkslategray;
+}
+nav a.active {
+  color: black !important;
+}
+
+*,
+*::before,
+*::after,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
+header {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  transform-style: inherit;
+  z-index: -1;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: url(https://i.postimg.cc/LXfyCZvB/emma-simpson-m-NGaa-Le-WEp0-unsplash.jpg)
+    top center;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.1);
+  min-height: 100%;
+  z-index: -2;
+}
+
+section {
+  position: relative;
+  min-height: 85%;
+  width: 100%;
+  transform-style: inherit;
+}
+
+.title {
+  position: absolute;
+  margin: 0;
+  top: calc(50% - 50px);
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+  height: 130px;
+  color: white;
+  font-size: 7rem;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.about {
+  margin-top: 5%;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.title-section {
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 20px 20px;
+  padding-bottom: 20px;
+}
+
+.texto {
+  box-shadow: 0 0 20px #333;
+  z-index: 1;
+  margin: auto;
+  box-sizing: border-box;
+  background: #282e34;
+  color: white;
+  padding: 48px;
+}
+.imagen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background-size: cover;
+  transform: translateZ(-0.5px) scale(1.6);
+  z-index: -1;
+}
+
+.imagen1::before {
+  background: url(https://i.postimg.cc/7Yd6vBHj/www-wethara-com.png) top center;
+}
+
+.imagen2::before {
+  background: url(https://i.postimg.cc/7Yd6vBHj/www-wethara-com.png) top center;
+}
